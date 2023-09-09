@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Gacha Organiser</title>
+	<meta name="description" content="gacha gacha">
+
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+	
+</head>
+<script> 
+	$(function(){
+		$("#includedContent").load("header.html"); 
+	});
+</script> 
+<body onload="countdownTime()">
+	<div class="container">
+		<div id="currenttime"><h2>Current Time:</h2></div>
+		<div class="row">
+			<div class="col gameblock">
+				<img src="gameicons/dragalialost.png" alt="dragalialost" class="rounded">
+				<!-- <h4>Dragalia Lost</h4> -->
+				<p>Local reset time: 02:00 PM</p>
+				<div id="dragalialeft">Remaining reset time: Time</div>
+			</div>
+			<div class="col gameblock">
+				<img src="gameicons/helios.png" alt="helios" class="rounded">
+				<!-- <h4>Helios: Rising Heroes</h4> -->
+				<p>Local reset time: 11:00 PM</p>
+				<div id="heliosleft">Remaining reset time: Time</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col gameblock">
+				<img src="gameicons/tot.png" alt="tearsofthemis" class="rounded">
+				<!-- <h4>Tears of Themis</h4> -->
+				<p>Local reset time: 03:00 AM</p>
+				<div id="totleft">Remaining reset time: Time</div>
+			</div>
+			<div class="col gameblock">
+				<img src="gameicons/grandchase.png" alt="grandchase" class="rounded">
+				<!-- <h4>Grand Chase: Dimensional Chaser</h4> -->
+				<p>Local reset time: 11:00 PM</p>
+				<div id="gcleft">Remaining reset time: Time</div>
+			</div>
+		</div>
+	</div>
+	
+
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+	<script src="scripts.js"></script>
+</body>
+</html>
